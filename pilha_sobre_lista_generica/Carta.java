@@ -1,5 +1,3 @@
-package pilha_sobre_lista_generica;
-
 public class Carta {
     int valor;
     String naipe;
@@ -11,6 +9,6 @@ public class Carta {
 
     @Override
     public String toString(){
-        return valor + "de" + naipe;
+        return valor + " de " + naipe;
     }
 }

@@ -1,8 +1,7 @@
-package pilha_sobre_lista_generica;
-
 public class No <Info> {
     private Info info;
-    private No proximo;
+    private No<Info> proximo;
+    
     public No (Info info){
         this.info = info;
         this.proximo = null;
@@ -10,13 +9,13 @@ public class No <Info> {
     public Info getInfo () {
         return info;
     }
-    public No getProximo(){
+    public No<Info> getProximo(){
         return proximo;
     }
     public void setInfo(Info info){
         this.info = info;
     }
-    public void setProximo(No proximo){
+    public void setProximo(No<Info> proximo){
         this.proximo = proximo;
     }
 
